@@ -19,4 +19,6 @@
         <item quantity="one">Você acertou somente %d pergunta.</item>
         <item quantity="other">Parabens, você acertou %d perguntas.</item>
     </plurals>
+    <string name="answerQuestionFour">herança</string>
+    <string name="answerQuestionTwo">myquizz</string>
 </resources>

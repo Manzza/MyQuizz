@@ -18,4 +18,6 @@
         <item quantity="one">You only hit %d question.</item>
         <item quantity="other">Congratz, you hit %d questions.</item>
     </plurals>
+    <string name="answerQuestionTwo">myquizz</string>
+    <string name="answerQuestionFour">inheritance</string>
 </resources>

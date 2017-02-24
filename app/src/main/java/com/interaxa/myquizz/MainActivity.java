@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void resolveQuestionThree() {
-        if(myquizz.getAnswerFour()!= null&& (myquizz.getAnswerFour().toLowerCase().contains("herança")||myquizz.getAnswerFour().toLowerCase().contains("inheritance"))){
+        if(myquizz.getAnswerFour()!= null&& myquizz.getAnswerFour().toLowerCase().contains(getString(R.string.answerQuestionFour))){
             myquizz.setQuestionFour(true);
             binding.setMyquiz(myquizz);
 
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void resolveQuestionTwo() {
-        if(myquizz.getAnswerFour()!= null&& myquizz.getAnswerTwo().toLowerCase().equals("myquizz")){
+        if(myquizz.getAnswerTwo()!= null&& myquizz.getAnswerTwo().toLowerCase().equals(getString(R.string.answerQuestionTwo))){
             myquizz.setQuestionTwo(true);
             binding.setMyquiz(myquizz);
 

@@ -24,26 +24,14 @@ public class quiz extends BaseObservable {
     private boolean radioFour= false;
     private int result = 0;
 
-    public boolean isQuestionOne() {
-        return questionOne;
-    }
-
     public void setQuestionOne(boolean questionOne) {
         this.questionOne = questionOne;
         this.result+=1;
     }
 
-    public boolean isQuestionTwo() {
-        return questionTwo;
-    }
-
     public void setQuestionTwo(boolean questionTwo) {
         this.questionTwo = questionTwo;
         this.result+=1;
-    }
-
-    public boolean isQuestionThree() {
-        return questionThree;
     }
 
     public void setQuestionThree(boolean questionThree) {
@@ -99,10 +87,6 @@ public class quiz extends BaseObservable {
         this.answerFour = answerFour;
     }
 
-    public boolean isQuestionFour() {
-        return questionFour;
-    }
-
     public void setQuestionFour(boolean questionFour) {
         this.questionFour = questionFour;
         this.result+=1;
@@ -110,10 +94,6 @@ public class quiz extends BaseObservable {
 
     public int getResult() {
         return result;
-    }
-
-    public void setResult(int result) {
-        this.result = result;
     }
 
     public boolean isRadioOne() {
