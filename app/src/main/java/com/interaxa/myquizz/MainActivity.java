@@ -12,7 +12,7 @@ import com.interaxa.myquizz.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
-    quiz myquizz = new quiz();
+    QuizzHelper myquizz = new QuizzHelper();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,19 +26,19 @@ public class MainActivity extends AppCompatActivity {
         resolveQuestionThree();
         resolveQuestionFour();
         Toast.makeText(this,formatToast() , Toast.LENGTH_SHORT).show();
-        myquizz = new quiz();
+        myquizz = new QuizzHelper();
         binding.setMyquiz(myquizz);
     }
     private String formatToast() {
-        String ret;
+        String msgToast;
         int count = myquizz.getResult();
         if(count>0) {
             Resources res = getResources();
-            ret = res.getQuantityString(R.plurals.question, count, count);
+            msgToast = res.getQuantityString(R.plurals.question, count, count);
         }else{
-            ret = getString(R.string.sorry);
+            msgToast = getString(R.string.sorry);
         }
-        return ret;
+        return msgToast;
     }
 
     private void resolveQuestionFour() {

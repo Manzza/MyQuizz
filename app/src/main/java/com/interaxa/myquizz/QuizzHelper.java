@@ -1,12 +1,13 @@
 package com.interaxa.myquizz;
 
+
 import android.databinding.BaseObservable;
 
 /**
  * Created by Manzza on 19/02/2017.
  */
 
-public class quiz extends BaseObservable {
+public class QuizzHelper {
 
     private boolean questionOne = false;
     private boolean questionTwo= false;
