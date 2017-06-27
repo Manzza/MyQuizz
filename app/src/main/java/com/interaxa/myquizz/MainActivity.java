@@ -43,14 +43,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void resolveQuestionFour() {
         if (myquizz.isCheckBoxOne()&& myquizz.isCheckBoxTwo() &&!myquizz.isCheckBoxThree()&&!myquizz.isCheckBoxFour() ){
-            myquizz.setQuestionThree(true);
+            myquizz.setQuestionFour(true);
             binding.setMyquiz(myquizz);
         }
     }
 
     private void resolveQuestionThree() {
         if(myquizz.getAnswerFour()!= null&& myquizz.getAnswerFour().toLowerCase().contains(getString(R.string.answerQuestionFour))){
-            myquizz.setQuestionFour(true);
+            myquizz.setQuestionThree(true);
             binding.setMyquiz(myquizz);
 
         }

@@ -1,18 +1,16 @@
 package com.interaxa.myquizz;
 
 
-import android.databinding.BaseObservable;
-
 /**
  * Created by Manzza on 19/02/2017.
  */
 
 public class QuizzHelper {
 
-    private boolean questionOne = false;
-    private boolean questionTwo= false;
-    private boolean questionThree= false;
-    private boolean questionFour= false;
+    protected boolean questionOne = false;
+    protected boolean questionTwo= false;
+    protected boolean questionThree= false;
+    protected boolean questionFour= false;
     private String  answerTwo ;
     private String  answerFour;
     private boolean checkBoxOne= false;
@@ -25,20 +23,6 @@ public class QuizzHelper {
     private boolean radioFour= false;
     private int result = 0;
 
-    public void setQuestionOne(boolean questionOne) {
-        this.questionOne = questionOne;
-        this.result+=1;
-    }
-
-    public void setQuestionTwo(boolean questionTwo) {
-        this.questionTwo = questionTwo;
-        this.result+=1;
-    }
-
-    public void setQuestionThree(boolean questionThree) {
-        this.questionThree = questionThree;
-        this.result+=1;
-    }
 
     public String getAnswerTwo() {
         return answerTwo;
@@ -88,11 +72,6 @@ public class QuizzHelper {
         this.answerFour = answerFour;
     }
 
-    public void setQuestionFour(boolean questionFour) {
-        this.questionFour = questionFour;
-        this.result+=1;
-    }
-
     public int getResult() {
         return result;
     }
@@ -128,4 +107,23 @@ public class QuizzHelper {
     public void setRadioFour(boolean radioFour) {
         this.radioFour = radioFour;
     }
+    public void setQuestionOne(boolean value) {
+        questionOne = value;
+        this.result+=1;
+    }
+
+    public void setQuestionTwo(boolean value) {
+        questionTwo = value;
+        this.result+=1;
+    }
+
+    public void setQuestionThree(boolean value) {
+        questionThree = value;
+        this.result+=1;
+    }
+    public void setQuestionFour(boolean value) {
+        questionFour = value;
+        this.result+=1;
+    }
+
 }
